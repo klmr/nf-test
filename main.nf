@@ -8,7 +8,7 @@ process sayHello {
     val x from cheers
   script:
     """
-    echo '$x world!' && [ "$x" != "Hello" ]
+    echo '$x world!'
     """
 }
 
