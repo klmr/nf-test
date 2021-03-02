@@ -3,6 +3,14 @@
 params.path = "/dev/urandom"
 params.size = "250M"
 
+log.info """\
+         =====================================================
+         path : ${params.path}
+         size : ${params.size}
+         =====================================================
+         """
+         .stripIndent()
+
 
 process HeadFile {
   echo true
