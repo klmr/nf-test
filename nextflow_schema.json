@@ -11,7 +11,7 @@
             "fa_icon": "fas fa-terminal",
             "description": "Some parameters",
             "properties": {
-                "transcriptome": {
+                "hello": {
                     "type": "string",
                     "description": "A file path",
                     "default": "${baseDir}/hello_schema.txt",
