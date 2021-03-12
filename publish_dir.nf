@@ -1,7 +1,9 @@
 
+params.outdir = 's3://nf-encrypted/chunks'
+
 process foo {
 
-    publishDir 's3://nf-encrypted/chunks'
+    publishDir "${params.outdir}"
 
     output:
     file 'chunk_*' into letters
