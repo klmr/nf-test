@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/master/nextflow_schema.json",
+    "title": "Test pipeline",
+    "description": "test pipeline",
+    "type": "object",
+    "definitions": {
+        "input_output_options": {
+            "title": "Input/output options",
+            "type": "object",
+            "fa_icon": "fas fa-terminal",
+            "description": "Some parameters",
+            "properties": {
+                "transcriptome": {
+                    "type": "string",
+                    "description": "A file path",
+                    "default": "${baseDir}/hello_schema.txt",
+                    "fa_icon": "fas fa-folder-open"
+                }
+            }
+        }
+    }
+}
